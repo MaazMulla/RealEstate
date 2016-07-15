@@ -1,0 +1,15 @@
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\RealEstateProject.exe.config
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.csprojResolveAssemblyReference.cache
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.Admin.resources
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.Form1.resources
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.Properties.Resources.resources
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.UserP.resources
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.csproj.GenerateResource.Cache
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\RealEstateProject.exe
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\RealEstateProject.pdb
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\DAL.dll
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\EntityFramework.dll
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\DAL.pdb
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\bin\Debug\EntityFramework.xml
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.exe
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\RealEstateProject\obj\Debug\RealEstateProject.pdb

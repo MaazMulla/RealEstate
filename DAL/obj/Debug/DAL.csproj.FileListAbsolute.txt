@@ -1,0 +1,8 @@
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\bin\Debug\DAL.dll.config
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\bin\Debug\DAL.dll
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\bin\Debug\DAL.pdb
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\bin\Debug\EntityFramework.dll
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\bin\Debug\EntityFramework.xml
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\obj\Debug\DAL.dll
+c:\users\maaz\documents\visual studio 2015\Projects\RealEstateProject\DAL\obj\Debug\DAL.pdb

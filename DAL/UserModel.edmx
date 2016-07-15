@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="realestateModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="houses">
+          <Key>
+            <PropertyRef Name="t_Id" />
+          </Key>
+          <Property Name="t_Id" Type="int" Nullable="false" />
+          <Property Name="type" Type="varchar" MaxLength="45" />
+          <Property Name="Address" Type="varchar" MaxLength="45" />
+          <Property Name="State" Type="varchar" MaxLength="45" />
+          <Property Name="City" Type="varchar" MaxLength="45" />
+          <Property Name="Cost" Type="varchar" MaxLength="45" />
+          <Property Name="Offer" Type="varchar" MaxLength="45" />
+          <Property Name="Offer by" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="u_Id" />
+          </Key>
+          <Property Name="u_Id" Type="int" Nullable="false" />
+          <Property Name="uName" Type="varchar" MaxLength="10" />
+          <Property Name="pw" Type="varchar" MaxLength="10" />
+          <Property Name="permissions" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityContainer Name="realestateModelStoreContainer">
+          <EntitySet Name="houses" EntityType="Self.houses" Schema="realestate" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="realestate" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="realestateModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="house">
+          <Key>
+            <PropertyRef Name="t_Id" />
+          </Key>
+          <Property Name="t_Id" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Cost" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Offer" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Offer_by" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="u_Id" />
+          </Key>
+          <Property Name="u_Id" Type="Int32" Nullable="false" />
+          <Property Name="uName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="pw" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="permissions" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="realestateEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="houses" EntityType="Self.house" />
+          <EntitySet Name="users" EntityType="Self.user" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="realestateModelStoreContainer" CdmEntityContainer="realestateEntities">
+          <EntitySetMapping Name="houses">
+            <EntityTypeMapping TypeName="realestateModel.house">
+              <MappingFragment StoreEntitySet="houses">
+                <ScalarProperty Name="t_Id" ColumnName="t_Id" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="Offer" ColumnName="Offer" />
+                <ScalarProperty Name="Offer_by" ColumnName="Offer by" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="realestateModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="u_Id" ColumnName="u_Id" />
+                <ScalarProperty Name="uName" ColumnName="uName" />
+                <ScalarProperty Name="pw" ColumnName="pw" />
+                <ScalarProperty Name="permissions" ColumnName="permissions" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="realestateModelStoreContainer" CdmEntityContainer="realestateEntities">
+    <EntitySetMapping Name="houses">
+      <EntityTypeMapping TypeName="realestateModel.house">
+        <MappingFragment StoreEntitySet="houses">
+          <ScalarProperty Name="t_Id" ColumnName="t_Id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Offer" ColumnName="Offer" />
+          <ScalarProperty Name="Offer_by" ColumnName="Offer by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="realestateModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="u_Id" ColumnName="u_Id" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="pw" ColumnName="pw" />
+          <ScalarProperty Name="permissions" ColumnName="permissions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="realestateModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="house">
+    <Key>
+      <PropertyRef Name="t_Id" />
+    </Key>
+    <Property Name="t_Id" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Offer" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Offer_by" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="u_Id" />
+    </Key>
+    <Property Name="u_Id" Type="Int32" Nullable="false" />
+    <Property Name="uName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="pw" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="permissions" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="realestateEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="houses" EntityType="Self.house" />
+    <EntitySet Name="users" EntityType="Self.user" />
+  </EntityContainer>
+</Schema>
